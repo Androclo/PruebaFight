@@ -1,0 +1,26 @@
+#header {
+    animation: transitionIn 2s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+#main-logo {
+    animation: rotateIn 1.4s;
+}
+@keyframes rotateIn {
+    from {
+        opacity: 0;
+        transform: rotateY(-180deg);
+    }
+}
+to {
+    opacity: 1;
+    transform: rotateY(0);
+}

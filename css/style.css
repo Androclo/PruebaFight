@@ -1,0 +1,547 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  /* Gradient */
+  background: rgb(167, 113, 113);
+  background: linear-gradient(54deg, rgba(167, 113, 113, 1) 15%, rgba(110, 73, 73, 1) 27%, rgba(57, 39, 39, 1) 41%, rgba(33, 28, 28, 1) 55%, rgba(0, 0, 0, 1) 78%, rgba(255, 255, 255, 1) 79%, rgba(255, 255, 255, 1) 81%, rgba(255, 0, 0, 1) 82%, rgba(255, 0, 0, 1) 93%, rgba(255, 255, 255, 1) 94%, rgba(255, 255, 255, 1) 96%, rgba(0, 0, 0, 1) 97%);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #636363;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.65em;
+  ;
+}
+a {
+  text-decoration: none;
+  color: #636363;
+}
+a:visited,
+a:link {
+  color: #636363;
+}
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
+  .contenedor {
+    color: #636363;
+    font-weight: 300;
+    height: 100%;
+    border-bottom: 1px solid rgb(212, 198, 172);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 18vh;
+    align-items: flex-start;
+    
+    padding-bottom: 10vh;
+  }
+  .contenedor h2 {
+    padding-bottom: 6vh;
+    font-size: 2em;
+    font-weight: 300;
+  }
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: wheat;
+  padding-top: 10%;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 2em;
+  margin-bottom: 4vh;
+}
+
+header p+p {
+  margin-top: 4vh;
+}
+
+header img {
+  max-width: 20%;
+  margin: 5vh auto;
+}
+
+/******************************************
+/* Nav
+/*******************************************/
+nav {
+  background: #f3f3f3;
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  left: 5%;
+  padding-bottom: 1%;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  padding-bottom: 5vh;
+}
+
+.top-nav ul {
+  font-size: 0.7rem;
+  height: 7vh;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+nav ul li .nav-link {
+  height: 13vh;
+  align-items: center;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+  border-radius: 1%;
+}
+
+nav a:active {
+  background-color: rgba(224, 224, 224, 0.7);
+}
+
+
+nav a:hover {
+  background-color: rgba(224, 224, 224, 0.7);
+  /* Sombras */
+  -webkit-box-shadow: 0px 0px 0px 10px rgba(224, 224, 224, 0.7);
+  box-shadow: 0px 0px 0px 10px rgba(224, 224, 224, 0.7);
+}
+
+@media screen and (max-width: 600px) {
+
+  #nav {
+    display: none;
+  }
+  #nav-scroll {
+    height: 50vh;
+  }
+}
+
+#nav-scroll {
+  height: 100vh;
+  margin-bottom: -4vh;
+}
+
+/******************************************
+/* wrapped
+/*******************************************/
+.wrap {
+  background-color: white;;
+  border-radius: 1%;
+  max-width: 90%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/******************************************
+/* Main
+/*******************************************/
+
+#academia h2,
+#academia p {
+  margin-left: 7vw;
+  max-width: 50%;
+}
+
+.btn {
+  margin: 8vh 0;
+  margin-left: 25vw;
+  border-radius: 8px;
+  padding: 1.5vh 3vw;
+  border: rgb(226, 210, 179) solid 1px;
+}
+#academia img {
+  max-width: 25vw;
+  margin: 0%;
+  position: absolute;
+  top: 140vh;
+  right: 8vw;
+}
+#academia div {
+  padding: 7vh 0;
+}
+#academia .btn {
+  margin-left: 7vw;
+}
+@media screen and (max-width: 500px) {
+  #academia h2,
+  #academia p { 
+  max-width: 90%;
+  }
+  #academia img {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+
+  #academia .btn {
+    display: none;
+  }
+}
+/******************************************
+/* Horarios
+/*******************************************/
+#horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#horarios h2, #horarios p, .dias, table {
+  margin-left: 7vw; 
+}
+#horarios section:first-child {
+  padding-bottom: 10vh;
+}
+#horarios p {
+  font-size: 1.2rem;
+}
+.tabla-horarios {
+border-collapse: collapse;
+margin: 25px 0;
+font-size: 1rem;
+min-width: 400px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tabla-horarios thead tr {
+  background-color: rgb(148, 6, 53);
+  color: #f3f3f3;
+  text-align: left;
+  font-weight: bold;
+}
+.tabla-horarios th, .tabla-horarios td {
+  padding: 12px 15px;
+}
+.tabla-horarios tbody tr {
+  border-bottom: 1px solid  #ddd;
+}
+.tabla-horarios tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+.tabla-horarios tbody tr:last-of-type {
+  border-bottom: 2px solid rgb(148, 6, 53);
+}
+.tabla-horarios tbody tr .dia-actual {
+  font-weight: bold;
+  color: rgb(148, 6, 53);
+}
+#horarios .btn {
+  margin-left: 0;
+}
+#hora-mobile {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+
+  .tabla-horarios {
+    display: none;
+  }
+  #hora-mobile {
+    display: block;
+  }
+  .btn.dir {
+    display: none;
+  }
+}
+/******************************************
+/* Entrenamientos
+/*******************************************/
+#entrenamientos {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#entrenamientos ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80%;
+}
+#entrenamientos h3 {
+  font-size: 1.5rem;
+  padding-bottom: 5vh;
+}
+#entrenamientos img {
+  max-width: 20vw;
+  margin-right: 5vw;
+  border: 3px wheat solid; 
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  
+  #entrenamientos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 0 0 25vw;
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+  #entrenamientos h3 {
+    font-size: 1.7rem;
+  }
+  #entrenamientos img {
+    max-width: 40vw;
+    width: 40vw;
+    border: 3px wheat solid; 
+    border-radius: 50%;
+    margin-bottom: 3vh;
+  }
+  #entrenamientos li {
+    padding: 3vh 0;
+  }
+  #entrenamientos li p {
+    max-width: 60%;
+  }
+}
+/******************************************
+/* Contacto
+/*******************************************/
+
+#contacto {
+  color: wheat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contacto a:visited {
+  color: #636363;
+}
+#calles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mapa {
+  border-radius: 5%;
+  margin-bottom: 5%;
+}
+#contacto p {
+  margin: 0 auto;
+}
+#links{
+  display: flex;
+  justify-content: space-between;
+  color: #f3f3f3;
+  font-size: 1,3rem ;
+}
+#contacto a {
+  font-size: 1.6rem;
+  padding: 0 5vw;
+}
+#contacto a:visited, #num {
+  color: #ffffff;
+}
+#contacto #num {
+  font-size: 1.5rem;
+}
+.tel {
+  padding: 1vw;
+}
+.redes {
+  font-size: 1.6rem;
+  color: white;
+}
