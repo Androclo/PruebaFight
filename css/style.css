@@ -203,8 +203,8 @@ a.anchor {
     flex-wrap: wrap;
     margin-top: 18vh;
     align-items: flex-start;
-    
-    padding-bottom: 10vh;
+    margin-bottom: -8vh;
+    padding-bottom: 18vh;
   }
   .contenedor h2 {
     padding-bottom: 6vh;
@@ -318,16 +318,7 @@ nav a:hover {
     display: none;
   }
   #nav-scroll {
-    height: 60vh;
-  }
-}
-@media screen and (max-width: 600px) {
-
-  #nav {
-    display: none;
-  }
-  #nav-scroll {
-    height: 60vh;
+    height: 90vh;
   }
 }
 
@@ -462,6 +453,9 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 8vh;
+  border-bottom: none;
 }
 #entrenamientos ul {
   display: flex;
@@ -514,6 +508,8 @@ box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 0;
+  padding-bottom: 8vh;
 }
 #contacto .anchor {
   padding-bottom: 0;
