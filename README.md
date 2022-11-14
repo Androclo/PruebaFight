@@ -1,9 +1,9 @@
 # Web page for Fight Club Maldonado
 This is a freelance project where i got to work with a local gym to create a simple responsive website from scratch for them.
 
-**Fight-club Maldonado:** https://pruebafight.netlify.app/
+**Fight-club Maldonado:** (https://pruebafight.netlify.app/)
 
-![Web's gif]([http://placecorgi.com/1200/650](https://raw.githubusercontent.com/andresgonzalezarbildi/PruebaFight/master/Fight%20Club.gif))
+![Web's gif](https://raw.githubusercontent.com/andresgonzalezarbildi/PruebaFight/master/Fight%20Club.gif)
 
 ## How It's Made:
 
