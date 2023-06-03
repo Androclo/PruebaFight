@@ -1,5 +1,5 @@
 # Web page for Fight Club Maldonado
-This is a freelance project where i got to work with a local gym to create a simple responsive website from scratch for them.
+This is a freelance project where i got to work with a local gym to create a simple responsive website from scratch for them!.
 
 <h1 align="center"><a href="https://pruebafight.netlify.app/"> Fight-club Maldonado </a></h1>
 <p align="center">
